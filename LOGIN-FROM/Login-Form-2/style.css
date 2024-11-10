@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background:  #8607b9;
+  margin: 2em;
+  padding: 2em;
+}
+
+.container{
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(130, 21, 21, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right,red, rgb(162, 229, 162),rgb(238, 11, 238));
+    background-clip: text;
+    color: transparent;
+}
+
+form{
+    margin: 10px;
+}
+
+label{
+    display: block;
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+input{
+    display: block;
+    width: 95%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    color: white;
+}
+
+button{
+    display: block;
+    width: 95%;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(to right, #cbb4d4, #20002c);
+    color: rgb(251, 247, 247);
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #20002c;
+}
+
+.link{
+    margin-top: 30px;
+    text-align: center;
+    color:white;
+}
+
+a:hover{
+    text-decoration: underline;
+}

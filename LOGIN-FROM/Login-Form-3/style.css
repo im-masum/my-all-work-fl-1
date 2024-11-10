@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+  background: lightblue;
+  overflow: hidden;
+  height: 80vh;
+}
+.login-bx{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(250, 248, 248);
+  border-radius: 10px;
+  padding: 10px 10px;
+  
+}
+.login-bx h1{
+  color: gray;
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid rgb(183, 192, 200);
+}
+.login-bx form{
+  padding: 0 50px;
+}
+.txt-field{
+  position: relative;
+  border-bottom: 2px solid grey;
+  margin: 30px 0;
+}
+.txt-field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.txt-field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: grey;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt-field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #2981bc;
+  transition: .5s;
+
+}
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+  top: -5px; color:  #2981bc;;
+}
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: grey;
+  cursor: pointer;
+  font-size: 18px;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 40px;
+  border: 3px solid;
+  background: #2981bc;
+  border-radius: 25px;
+  font-size: 24px;
+  color: rgb(188, 171, 171);
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #787a74;
+  transition: .5s;
+}
+.signup-link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+.signup-link a{
+  color: #2981bc;
+  text-decoration: none;
+}
+.signup-link a:hover{
+  border-bottom: 3px solid;
+  
+}
